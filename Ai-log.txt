@@ -1,0 +1,96 @@
+1 - I am building a Mood Journal app with Expo Router v4, Supabase, Zustand, TypeScript, Nativewind, and AI features. Act as my senior engineer. Generate a step-by-step plan, folder structure, required screens, required files, and ask me which part to scaffold next. Follow Expo Router v4 conventions. Keep code modular. Wait for my confirmation before generating code.
+A - 'll help you build this Mood Journal app! Before I create a comprehensive plan, I need to clarify a few critical aspects:
+What AI features do you want in the app?
+a) Sentiment analysis of journal entries + mood insights/trends
+b) AI chat companion to discuss feelings
+c) Both sentiment analysis and AI chat
+d) Just basic mood tracking (add AI later)
+What authentication methods should I include?
+a) Email/Password only
+b) Email/Password + Social OAuth (Google/Apple)
+c) Magic link (passwordless email)
+What are the core screens/features you need?
+a) Add mood entry, view history, basic stats
+b) Add entry, calendar view, detailed analytics, mood trends
+c) Full featured: entry CRUD, calendar, analytics, insights, settings, export data
+Please answer with the letter choices (e.g., "1a, 2b, 3c") so I can create a tailored plan for your needs.
+
+2- I'll help you build this Mood Journal app! Before I create a comprehensive plan, I need to clarify a few critical aspects:
+
+1. What AI features do you want in the app?
+   - a) Sentiment analysis of journal entries + mood insights/trends
+   - b) AI chat companion to discuss feelings
+   - c) Both sentiment analysis and AI chat
+   - d) Just basic mood tracking (add AI later)
+
+2. What authentication methods should I include?
+   - a) Email/Password only
+   - b) Email/Password + Social OAuth (Google/Apple)
+   - c) Magic link (passwordless email)
+
+3. What are the core screens/features you need?
+   - a) Add mood entry, view history, basic stats
+   - b) Add entry, calendar view, detailed analytics, mood trends
+   - c) Full featured: entry CRUD, calendar, analytics, insights, settings, export data
+
+2 - 1d, 2a, 3c
+A - moodflow-app-setup.plan.md
+
+3- Install Supabase, Zustand, Nativewind, and required dependencies
+A - dependencies
+
+Installed Dependencies
+Core Libraries
+@supabase/supabase-js (v2.81.1) - Supabase client for backend services
+zustand (v5.0.8) - Lightweight state management
+nativewind (v4.2.1) - Tailwind CSS for React Native
+tailwindcss (v3.4.18) - CSS framework (dev dependency)
+Storage & Security
+@react-native-async-storage/async-storage (v2.2.0) - Local storage
+expo-secure-store (v15.0.7) - Secure token/credential storage
+Date & Time
+date-fns (v4.1.0) - Modern date utility library
+Data Visualization
+victory-native (v41.20.2) - Charts and graphs
+react-native-svg (v15.15.0) - SVG support for charts
+UI Components
+react-native-calendars (v1.1313.0) - Calendar component for mood tracking
+File Operations
+expo-file-system (v19.0.17) - File system access for data export
+expo-sharing (v14.0.7) - Share/export functionality
+TypeScript Support
+@types/react-native (v0.72.8) - TypeScript types
+
+4- Set up Nativewind With Tailwind config and global styles
+
+5 - Initialize Supabase client and configure environment variablesr
+
+6 - Create TypeScript types for mood entries, auth, and database
+
+7 - Build Zustand stores for auth, mood entries, and settings
+
+8 - Implement service layers for Supabase auth and mood CRUD operations
+
+9 - Create database schema and RLS policies in Supabase
+
+10 - Create reusable UI components (Button, Input, Card, etc.)
+
+11 - Build login and signup screens with auth flow
+
+12 - Build mood selector, mood card, and entry form components
+
+13 - Create home screen with today's mood and recent entries
+
+14 - Build calendar view with mood indicators
+
+15 - Create insights screen with analytics and charts
+
+16 - Build settings screen with profile, export, and logout
+
+17 - Implement data export functionality (JSON/CSV)
+
+18 - Update the database @SUPABASE_SETUP.md . When i log out and signup with another acc it should fetch the data for that profile 
+
+19 - Now since the app is done our goal changes, i want to advance the app to be more real world like and be ready for production. Plan the next steps to deliver it
+
+20 - 1. all platforms (web only for testing while development). 2. For now lets do MVP. 3. i want it to be production ready, not publish it yet. Lets imporve Ui/UX
